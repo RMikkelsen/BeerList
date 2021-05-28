@@ -3,7 +3,7 @@ function Beer(props){
     const beer = getBeer(id);
 
     if (beer === undefined) {
-        return <p>What no beer? I'm thirsty :(</p>
+        return <p>What no beer? I'm thirsty :(</p>;
     }else return (
         <>
         <h3>Beer: {beer.name}</h3>

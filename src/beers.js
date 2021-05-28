@@ -10,7 +10,7 @@ function Beers (props) {
         <ol>
             {
                 data.map (beer => <li>
-                   <Link to ={'/beer/${beer.id}'}>{beer.name}</Link>
+                   <Link to ={`/beer/${beer.id}`}>{beer.name}</Link>
                 </li>)
             }
         </ol>

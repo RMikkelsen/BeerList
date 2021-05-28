@@ -31,7 +31,6 @@ function getBeer(id){
 <Router>
   <Beers path="/" data = {beers}></Beers>
   <Beer path ="/beer/:id" getBeer={getBeer}></Beer>
-
 </Router>
  </>
   
