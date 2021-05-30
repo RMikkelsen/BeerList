@@ -1,3 +1,5 @@
+import { Link } from "@reach/router";
+
 function Beer(props){
     const {id, getBeer} = props;
     const beer = getBeer(id);
@@ -6,10 +8,21 @@ function Beer(props){
         return <p>What no beer? I'm thirsty :(</p>;
     }else return (
         <>
+        <div class="beer">
+
+       
         <h3>Beer: {beer.name}</h3>
+        <p>ABV: {beer.abv}</p>
         <p>{beer.description}</p>
-        <p>{beer.image_url}</p>
-        </>
+       <img src ={beer.image_url} alt="beer"></img>
+      
+<div class = "homelink">
+      
+                   <Link to="/">Back to the List</Link>
+                   </div>
+       </div>
+</>
+        
     );
 }
 export default Beer;

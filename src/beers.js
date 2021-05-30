@@ -1,19 +1,26 @@
 import { Link } from "@reach/router";
-//import Beer from "./Beer";
+import AddBeer from "./AddBeer";
 
 function Beers (props) {
-    const{data} = props;
+    const{data, addBeer} = props;
 
     return(
         <>
-        <h3> List</h3>
-        <ol>
+      
+      
+        <div class="list">
+       
+        <ol class="ol">
+        <h3> Beer List</h3>
             {
                 data.map (beer => <li>
                    <Link to ={`/beer/${beer.id}`}>{beer.name}</Link>
                 </li>)
             }
         </ol>
+        <AddBeer addBeer = {addBeer}/>
+        </div>
+     
         </>
     );
         }
