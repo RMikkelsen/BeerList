@@ -1,5 +1,6 @@
 import { Link } from "@reach/router";
 import AddBeer from "./AddBeer";
+import React from 'react';
 
 function Beers (props) {
     const{data, addBeer} = props;
@@ -9,11 +10,12 @@ function Beers (props) {
       
       
         <div class="list">
-       
-        <ol class="ol">
+        
+        <ol class="ol" >
         <h3> Beer List</h3>
             {
                 data.map (beer => <li>
+                
                    <Link to ={`/beer/${beer.id}`}>{beer.name}</Link>
                 </li>)
             }

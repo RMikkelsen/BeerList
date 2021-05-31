@@ -18,9 +18,7 @@ return(
    <input class="form" onChange ={(event) => setDescription(event.target.value)} type ="text" placeholder = "Description" /><br/><br/>
 
 
-<button type="button" onClick ={(event) =>{
-  addBeer(name, abv, description);
-}}>Add Beer</button>
+<button class ="button" type="button" onClick ={(event) =>{ addBeer(name, abv, description); }}>Add Beer</button>
 </div>
     </>
 );
