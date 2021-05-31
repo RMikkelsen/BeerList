@@ -14,7 +14,7 @@ function Beer(props){
         <h3>Beer: {beer.name}</h3>
         <p>ABV: {beer.abv}</p>
         <p>{beer.description}</p>
-       <img src ={beer.image_url} alt="beer"></img>
+       <img src ={beer.image_url} alt="craft beer"></img>
       
 <div class = "homelink">
       

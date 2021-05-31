@@ -76,7 +76,7 @@ box-shadow: 5px 5px 5px rgba(2, 2, 2, 0.5);
 }
 .homelink{
   display: flex;
-  align-items: flex-end;
+
 }
 .title{
   color: white;
